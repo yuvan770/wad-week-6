@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Date</title>
+
+    <script>
+        function displayDate() {
+            document.getElementById("txtDate").value =
+                new Date().toDateString();
+            alert("Date displayed successfully");
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Display Date Using JavaScript</h3>
+
+    <input type="text" id="txtDate" placeholder="Date will appear here" readonly>
+    <br><br>
+
+    <button onclick="displayDate()">Display Date</button>
+</body>
+</html>
